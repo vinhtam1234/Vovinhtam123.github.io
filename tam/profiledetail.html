@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sở Thích Cá Nhân</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        nav {
+            background: #333;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #4facfe;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .hobby-section {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .hobby-section h2 {
+            color: #4facfe;
+            margin-bottom: 1rem;
+        }
+
+        .hobby-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .hobby-item {
+            background: #f9f9f9;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .hobby-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            .hobby-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Sở Thích Cá Nhân Của Tôi</h1>
+        <p>Chào mừng bạn đến với thế giới sở thích của tôi!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="#music">Âm Nhạc</a></li>
+            <li><a href="#travel">Du Lịch</a></li>
+            <li><a href="#reading">Đọc Sách</a></li>
+            <li><a href="#movies">Xem Phim</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="music" class="hobby-section">
+            <h2>Âm Nhạc</h2>
+            <p>Âm nhạc là niềm đam mê lớn của tôi. Tôi yêu thích nhiều thể loại, từ nhạc cổ điển đến pop và rock. Âm
+                nhạc giúp tôi thư giãn và tìm cảm hứng trong cuộc sống.</p>
+            <div class="hobby-grid">
+                <div class="hobby-item">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.BQCazUb_T7UA4yZXy8uaYgHaFS?pid=Api&P=0&h=180"
+                        alt="Music">
+                    <h3>Nhạc Pop</h3>
+                    <p>Tôi thích nghe các bài hát pop hiện đại vì giai điệu dễ nhớ và năng động.</p>
+                </div>
+                <div class="hobby-item">
+                    <img src="https://tse3.explicit.bing.net/th/id/OIP.oBeK5O2-snphmNiZVI6mlAAAAA?pid=Api&P=0&h=180"
+                        alt="Classical Music">
+                    <h3>Nhạc Cổ Điển</h3>
+                    <p>Nhạc cổ điển của Beethoven và Mozart mang lại cảm giác yên bình.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="travel" class="hobby-section">
+            <h2>Du Lịch</h2>
+            <p>Du lịch giúp tôi khám phá thế giới, trải nghiệm văn hóa mới và tận hưởng vẻ đẹp thiên nhiên.</p>
+            <div class="hobby-grid">
+                <div class="hobby-item">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.TT6DEDHNOaq5a1ggoDs0aQHaEJ?pid=Api&P=0&h=180"
+                        alt="Travel">
+                    <h3>Biển</h3>
+                    <p>Tôi yêu thích các bãi biển với cát trắng và làn nước trong xanh.</p>
+                </div>
+                <div class="hobby-item">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.eHxmiuqjj_KiYDxg7xv0jAHaFC?pid=Api&P=0&h=180"
+                        alt="Mountains">
+                    <h3>Núi</h3>
+                    <p>Leo núi là cách tuyệt vời để thử thách bản thân và ngắm cảnh đẹp.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="reading" class="hobby-section">
+            <h2>Đọc Sách</h2>
+            <p>Đọc sách mở ra cánh cửa tri thức và trí tưởng tượng. Tôi thích tiểu thuyết khoa học viễn tưởng và sách
+                self-help.</p>
+            <div class="hobby-grid">
+                <div class="hobby-item">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.mb6uYCQkMXQBqWD2ZpE3HAHaFj?pid=Api&P=0&h=180"
+                        alt="Books">
+                    <h3>Tiểu Thuyết</h3>
+                    <p>Các cuốn tiểu thuyết như "Dune" luôn cuốn hút tôi.</p>
+                </div>
+                <div class="hobby-item">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.mADCwi5sOhBvvIe1a0rQ0AHaEK?pid=Api&P=0&h=180"
+                        alt="Self-Help">
+                    <h3>Sách Self-Help</h3>
+                    <p>Sách phát triển bản thân giúp tôi cải thiện kỹ năng sống.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="games" class="hobby-section">
+            <h2>Game</h2>
+            <p>Chơi game là cách tuyệt vời để giải trí, thử thách bản thân và khám phá những thế giới ảo sống động.</p>
+            <div class="hobby-grid">
+                <div class="hobby-item">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.kGZj1DfOgFm4q_aCujq3nwHaEK?pid=Api&P=0&h=180" alt="Game Hành Động">
+                    <h3>Game Hành Động</h3>
+                    <p>Những tựa game hành động nhanh như "Call of Duty" luôn mang lại cảm giác hồi hộp và phấn khích.
+                    </p>
+                </div>
+                <div class="hobby-item">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.S3OKrcAPwnoiuodYTKWEXAHaEK?pid=Api&P=0&h=180" alt="Game Phiêu Lưu">
+                    <h3>Game Phiêu Lưu</h3>
+                    <p>Game phiêu lưu như "The Legend of Zelda" giúp tôi đắm chìm trong các cuộc hành trình kỳ thú.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Sở Thích Cá Nhân. Tất cả quyền được bảo lưu.</p>
+    </footer>
+</body>
+
+</html>
